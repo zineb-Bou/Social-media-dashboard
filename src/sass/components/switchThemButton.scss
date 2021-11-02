@@ -1,0 +1,35 @@
+@import 'global';
+@import 'util';
+.header__toggle {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  .toggle {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    background: var(--toggle-btn-bg);
+    width: 60px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 30px;
+    padding: 0 5px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: var(--toggle-ball);
+      transition: transform 400ms ease-in-out;
+    }
+    &.move {
+      &::before {
+        transform: translatex(30px);
+      }
+    }
+  }
+}

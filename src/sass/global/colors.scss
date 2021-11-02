@@ -22,31 +22,48 @@
   --background: var(--White);
   --top-background-pattern: var(--Very-PaleBlue);
   --card-background: var(--Light-Grayish-Blue);
-  --big-heading: var(--Very-Dark-Blue);
   --text: var(--Dark-Grayish-Blue);
+  --toggle-btn-bg: var(--Light-Toggle);
+  --toggle-ball: var(--White);
+  --h1: var(--Very-Dark-Blue);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--Very-Dark-Blue);
-    --top-background-pattern: var(--Very-Dark-Blue);
+    --top-background-pattern: var(--Dark-Desaturated-Blue);
     --card-background: var(--Dark-Desaturated-Blue);
-    --big-heading: var(--White);
     --text: var(--Desaturated-Blue);
+    --toggle-btn-bg: linear-gradient(
+      to right,
+      var(--Dark-Toggle-start),
+      var(--Dark-Toggle-end)
+    );
+    --toggle-ball: var(--Dark-Desaturated-Blue);
+    --h1: var(--White);
+    --header-bg: var(--Very-Dark-Blue);
   }
 }
 body.light {
   --background: var(--White);
   --top-background-pattern: var(--Very-PaleBlue);
   --card-background: var(--Light-Grayish-Blue);
-  --big-heading: var(--Very-Dark-Blue);
   --text: var(--Dark-Grayish-Blue);
+  --toggle-btn-bg: var(--Light-Toggle);
+  --toggle-ball: var(--White);
+  --h1: var(--Very-Dark-Blue);
 }
 
 body.dark {
   --background: var(--Very-Dark-Blue);
-  --top-background-pattern: var(--Very-Dark-Blue);
+  --top-background-pattern: var(--Dark-Desaturated-Blue);
   --card-background: var(--Dark-Desaturated-Blue);
-  --big-heading: var(--White);
   --text: var(--Desaturated-Blue);
+  --toggle-btn-bg: linear-gradient(
+    to right,
+    var(--Dark-Toggle-start),
+    var(--Dark-Toggle-end)
+  );
+  --toggle-ball: var(--Dark-Desaturated-Blue);
+  --h1: var(--White);
 }

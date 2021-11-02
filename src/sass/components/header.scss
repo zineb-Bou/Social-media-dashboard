@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: rem(50) rem(100) rem(100) rem(100);
+  justify-content: space-between;
+  background-color: var(--top-background-pattern);
+  border-radius: 0 0 15px 15px;
+}

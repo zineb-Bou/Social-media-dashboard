@@ -1,14 +1,16 @@
 @import '../util';
 
-h1,
-h2,
-h3 {
-  margin-top: 0;
-  line-height: 1.1;
+body {
+  font-family: var(--font-family);
 }
-
-a,
-a:visited,
-a:active {
-  text-decoration: none;
+h1 {
+  color: var(--h1);
+}
+.header__subtitle {
+  color: var(--Desaturated-Blue);
+  font-weight: 700;
+}
+.header__toggle {
+  font-weight: 700;
+  color: var(--Desaturated-Blue);
 }
