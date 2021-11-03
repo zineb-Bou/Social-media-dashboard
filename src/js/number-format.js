@@ -1,6 +1,6 @@
 const million = 1_000_000;
 const thousand = 1000;
-function formatNumber(num) {
+export function formatNumber(num) {
   if (num >= 10 * million) {
     const numericPart = Math.floor(num / million);
     const suffix = 'm';

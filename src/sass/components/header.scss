@@ -1,8 +1,17 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  padding: rem(50) rem(100) rem(100) rem(100);
+  padding: rem(50) rem(150) rem(100) rem(150);
   justify-content: space-between;
   background-color: var(--top-background-pattern);
   border-radius: 0 0 15px 15px;
+  // @include breakpoint-down(extra-small) {
+  //   padding: rem(50) rem(50);
+  // }
+}
+.header__title {
+  @include breakpoint-down(small) {
+    padding-bottom: rem(40);
+    border-bottom: 1px solid var(--Desaturated-Blue);
+  }
 }

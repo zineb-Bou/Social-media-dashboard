@@ -26,6 +26,7 @@
   --toggle-btn-bg: var(--Light-Toggle);
   --toggle-ball: var(--White);
   --h1: var(--Very-Dark-Blue);
+  --card-value: var(--Very-Dark-Blue);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +42,7 @@
     );
     --toggle-ball: var(--Dark-Desaturated-Blue);
     --h1: var(--White);
+    --card-value: var(--White);
     --header-bg: var(--Very-Dark-Blue);
   }
 }
@@ -52,6 +54,7 @@ body.light {
   --toggle-btn-bg: var(--Light-Toggle);
   --toggle-ball: var(--White);
   --h1: var(--Very-Dark-Blue);
+  --card-value: var(--Very-Dark-Blue);
 }
 
 body.dark {
@@ -66,4 +69,5 @@ body.dark {
   );
   --toggle-ball: var(--Dark-Desaturated-Blue);
   --h1: var(--White);
+  --card-value: var(--White);
 }
