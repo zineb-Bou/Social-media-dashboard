@@ -5,6 +5,11 @@
   --Twitter: hsl(203, 89%, 53%);
   --Instagram-start: hsl(37, 97%, 70%);
   --Instagram-end: hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(
+    to right,
+    var(--Instagram-start),
+    var(--Instagram-end)
+  );
   --YouTube: hsl(348, 97%, 39%);
   --Dark-Toggle-start: hsl(210, 78%, 56%);
   --Dark-Toggle-end: hsl(146, 68%, 55%);

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { followerData } from '../data.js';
 import { metricData } from '../data.js';
 import { formatNumber } from '../number-format';
 import { Logo } from './logo';

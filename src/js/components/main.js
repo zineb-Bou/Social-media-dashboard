@@ -1,11 +1,12 @@
 import React from 'react';
 import MetricList from './metric';
+import SocialMediaList from './social-media-card';
 function Main() {
   return (
     <>
       <main className="main">
-        <section className="social-followers-sec">
-          
+        <section className="social-media-sec">
+          <SocialMediaList />
         </section>
         <section className="metric-sec">
           <h2 className="metric-sec_heading">Overview-today</h2>
