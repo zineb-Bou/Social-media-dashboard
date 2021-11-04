@@ -4,5 +4,8 @@ body {
   background-color: var(--background);
 }
 .main {
-  padding: 0 rem(150) rem(50) rem(150);
+  padding: 0 rem(140) rem(50) rem(140);
+  @include breakpoint(large) {
+    padding: rem(50) rem(40) rem(100) rem(40);
+  }
 }

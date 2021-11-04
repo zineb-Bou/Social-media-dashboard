@@ -1,17 +1,21 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  padding: rem(50) rem(150) rem(100) rem(150);
+  padding: rem(50) rem(140) rem(100) rem(140);
+  padding-top: rem(50);
+  padding-bottom: rem(140);
   justify-content: space-between;
   background-color: var(--top-background-pattern);
   border-radius: 0 0 15px 15px;
-  // @include breakpoint-down(extra-small) {
-  //   padding: rem(50) rem(50);
-  // }
+  @include breakpoint(large) {
+    padding: rem(50) rem(40) rem(100) rem(40);
+  }
 }
 .header__title {
-  @include breakpoint-down(small) {
-    padding-bottom: rem(40);
+  @include breakpoint(small) {
+    width: 100%;
+    padding: 0;
+    padding-bottom: rem(50);
     border-bottom: 1px solid var(--Desaturated-Blue);
   }
 }
