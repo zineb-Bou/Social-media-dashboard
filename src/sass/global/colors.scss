@@ -24,6 +24,8 @@
   --Light-Grayish-Blue: hsl(227, 47%, 96%);
   --Dark-Grayish-Blue: hsl(228, 12%, 44%);
   --Very-Dark-Blue: hsl(230, 17%, 14%);
+  --fading-dark-blue: hsl(230, 21%, 32%);
+  --fading-ligh-grey: hsl(230, 37%, 88%);
   --background: var(--White);
   --top-background-pattern: var(--Very-PaleBlue);
   --card-background: var(--Light-Grayish-Blue);
@@ -32,6 +34,7 @@
   --toggle-ball: var(--White);
   --h1: var(--Very-Dark-Blue);
   --card-value: var(--Very-Dark-Blue);
+  --card-hover: var(--fading-ligh-grey);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +52,7 @@
     --h1: var(--White);
     --card-value: var(--White);
     --header-bg: var(--Very-Dark-Blue);
+    --card-hover: var(--fading-dark-blue);
   }
 }
 body.light {
@@ -60,6 +64,7 @@ body.light {
   --toggle-ball: var(--White);
   --h1: var(--Very-Dark-Blue);
   --card-value: var(--Very-Dark-Blue);
+  --card-hover: var(--fading-ligh-grey);
 }
 
 body.dark {
@@ -75,4 +80,5 @@ body.dark {
   --toggle-ball: var(--Dark-Desaturated-Blue);
   --h1: var(--White);
   --card-value: var(--White);
+  --card-hover: var(--fading-dark-blue);
 }

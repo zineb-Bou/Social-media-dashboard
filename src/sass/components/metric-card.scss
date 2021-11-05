@@ -13,6 +13,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 10px;
+      &:hover {
+        background-color: var(--card-hover);
+      }
       .metric__heading a {
         font-size: rem(14);
         text-decoration: none;

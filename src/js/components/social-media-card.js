@@ -2,15 +2,33 @@ import React, { Component } from 'react';
 import { followerData } from '../data.js';
 import { formatNumber } from '../number-format';
 import { Logo } from './logo';
-const changeDirection = (changePercent) => (changePercent >= 0 ? 'up' : 'down');
+import { generateLink } from '../generate-link';
 
-export class SocialMediaCrad extends Component {
+const changeDirection = (changePercent) => (changePercent >= 0 ? 'up' : 'down');
+class SocialMediaCrad extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      link: null,
+    };
+  }
+  onClick() {
+    this.state.link.click();
+  }
   render() {
     return (
-      <article className={`social-media-card ${this.props.brand}`}>
+      <article
+        className={`social-media-card ${this.props.brand}`}
+        onClick={this.onClick.bind(this)}
+      >
         <h3 className="social-media-card__heading">
           <Logo brand={this.props.brand} aria-hidden />
-          <a href="#">{this.props.username}</a>
+          <a
+            href={generateLink(this.props.brand) + this.props.username}
+            ref={(ref) => (this.state.link = ref)}
+          >
+            {this.props.username}
+          </a>
         </h3>
         <p className="social-media-card__value">
           {formatNumber(this.props.value)}
@@ -37,7 +55,6 @@ export class SocialMediaCrad extends Component {
     );
   }
 }
-
 function SocialMediaList() {
   let list = [];
   followerData.forEach((element) => {
@@ -54,5 +71,4 @@ function SocialMediaList() {
   });
   return <div className="social-media-wrapper">{list}</div>;
 }
-
 export default SocialMediaList;
