@@ -1,6 +1,6 @@
 # Social media dashboard theme switcher using React and Sass
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](/public/assets/design/desktop-preview.jpg)
+![Design preview for the Social media dashboard with theme switcher coding challenge](/public\design\desktop-preview.jpg)
 
 ## Table of contents
 
