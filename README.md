@@ -1,6 +1,6 @@
 # Social media dashboard theme switcher using React and Sass
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](/public/assets/desktop-preview.jpg)
+![Design preview for the Social media dashboard with theme switcher coding challenge](public/assets/desktop-preview.jpg)
 
 ## Table of contents
 
@@ -42,6 +42,6 @@ I didn't want to go for creat-react-app to set my environment because it does al
 
 Thank you for reading so far,
 
-Please if there is a room for improvement feel free to contribute
+Please if there is any improvement feel free to contribute
 
 Made with 💖 by [Zineb Boutaa](https://zineb-bou.github.io/)
