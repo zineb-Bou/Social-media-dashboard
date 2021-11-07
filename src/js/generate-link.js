@@ -1,8 +1,8 @@
 export function generateLink(brand) {
   let link;
-  if (brand === 'facebook') link = 'https://facebook.com/';
-  if (brand === 'youtube') link = 'https://www.youtube.com/';
-  if (brand === 'twitter') link = 'https://twitter.com/';
-  if (brand === 'instagram') link = 'https://instagram.com/';
+  if (brand === 'facebook') link = 'facebook.com/';
+  if (brand === 'youtube') link = 'www.youtube.com/';
+  if (brand === 'twitter') link = 'twitter.com/';
+  if (brand === 'instagram') link = 'instagram.com/';
   return link;
 }

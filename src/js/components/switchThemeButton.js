@@ -3,7 +3,7 @@ class SwitchThemeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: '',
+      active: null,
     };
   }
   colorModeFromPreferences() {
@@ -23,26 +23,26 @@ class SwitchThemeButton extends React.Component {
       this.colorModeFromLocalStorage() || this.colorModeFromPreferences();
     if (color == 'dark') {
       this.setState({
-        active: 'dark',
+        active: true,
       });
       document.body.classList = 'dark';
     } else if (color == 'light') {
       this.setState({
-        active: 'light',
+        active: false,
       });
       document.body.classList = 'light';
     }
   }
   toggle() {
-    if (this.state.active == 'dark') {
+    if (this.state.active == true) {
       document.body.classList = 'light';
       localStorage.setItem('colorMode', 'light');
       this.setState({
-        active: 'light',
+        active: false,
       });
-    } else if (this.state.active == 'light') {
+    } else if (this.state.active == false) {
       this.setState({
-        active: 'dark',
+        active: true,
       });
       document.body.classList = 'dark';
       localStorage.setItem('colorMode', 'dark');
@@ -54,12 +54,14 @@ class SwitchThemeButton extends React.Component {
         <button
           aria-pressed={this.state.active}
           className="header__toggle"
-          aria-label="theme toggle"
+          aria-label="dark theme  "
           onClick={this.toggle.bind(this)}
         >
-          {this.state.active == 'dark' ? 'Light theme' : 'Dark theme'}
+          <span aria-hidden="true">
+            {this.state.active == true ? 'Light theme' : 'Dark theme'}
+          </span>
           <span
-            className={`toggle ${this.state.active == 'dark' ? 'move' : ''} `}
+            className={`toggle ${this.state.active == true ? 'move' : ''} `}
             aria-hidden="true"
           ></span>
         </button>

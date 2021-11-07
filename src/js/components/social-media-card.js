@@ -24,7 +24,7 @@ class SocialMediaCrad extends Component {
         <h3 className="social-media-card__heading">
           <Logo brand={this.props.brand} aria-hidden />
           <a
-            href={generateLink(this.props.brand) + this.props.username}
+            href={generateLink(this.props.brand) + this.props.username}   
             ref={(ref) => (this.state.link = ref)}
           >
             {this.props.username}

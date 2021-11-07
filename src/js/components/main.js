@@ -6,6 +6,9 @@ function Main() {
     <>
       <main className="main">
         <section className="social-media-sec">
+          <h2 className="metric-sec_heading visually-hidden">
+            Social media review 
+          </h2>
           <SocialMediaList />
         </section>
         <section className="metric-sec">
