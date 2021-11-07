@@ -11,6 +11,7 @@ export class Logo extends Component {
           viewBox="0 0 20 20"
           width="20"
           height="20"
+          aria-hidden="true"
         >
           <path
             fill="#178FF5"
@@ -26,6 +27,7 @@ export class Logo extends Component {
           viewBox="0 0 20 17"
           width="20"
           height="17"
+          aria-hidden="true"
         >
           <path
             fill="#1DA1F2"
@@ -41,6 +43,7 @@ export class Logo extends Component {
           viewBox="0 0 20 20"
           width="20"
           height="20"
+          aria-hidden="true"
         >
           <defs>
             <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
@@ -63,6 +66,7 @@ export class Logo extends Component {
           viewBox="0 0 20 20"
           width="20"
           height="20"
+          aria-hidden="true"
         >
           <path
             fill="#C4032B"
