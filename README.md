@@ -26,7 +26,7 @@ Users should be able to:
 
 This is my first challenge using React js, I took accessibility into consideration from the beginning, trying to make all the interactive components accessible (toggle switch and the cards ), also I made sure to use the right HTML markup for every element before adding any style.
 
-For the theme toggle button, there are different solutions to build an inclusive toggle switch, for this case I used `aria-pressed` to toggle accessible state (dark/light).
+For the theme toggle button, there are different solutions to build an inclusive toggle switch, for this case I used `aria-pressed` to toggle accessible state.
 
 For the cards also there are quite different approaches to build accessible cards [check this link](https://inclusive-components.design/cards/) with all those approaches the one that is considered a more robust solution, is adding a simple script to the `Onclick` event of the whole block then using the `<a>` link inside the `<h2>` as the target of the `OnClick`. In that way the whole block is clickable, and we're likely to have the most descriptive link text.
 
