@@ -38,7 +38,7 @@ changed after the page was visited - and the page is not loaded - the last value
 
 For styling I tried to use only grids to set the layout without any media queries, Sass is really cool when it comes to style structuring, so I divided the style folder into different subfolders to keep everything neat and clean.
 
-I didn't want to go for creat-react-app to set my environment because it does all the magic for us, so I used Parcel (for such a small project it works very because it has 0 configurations).
+I didn't want to go for creat-react-app to set my environment because it does all the magic for us, so I used Parcel (for such a small project it works very well because it has 0 configurations).
 
 Thank you for reading so far,
 
