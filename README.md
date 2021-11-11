@@ -24,7 +24,7 @@ Users should be able to:
 
 ## My process
 
-This is my first challenge using React js, I took accessibility into consideration from the beginning, trying to make all the interactive components accessible (toggle switch and the cards ), also I made sure to use the right HTML markup for every element before adding any style(dark theme true / false).
+This is my first challenge using React js, I took accessibility into consideration from the beginning, trying to make all the interactive components accessible (toggle switch and the cards ), also I made sure to use the right HTML markup for every element before adding any style.
 
 For the theme toggle button, there are different solutions to build an inclusive toggle switch, for this case I used `aria-pressed` to toggle accessible state.
 
