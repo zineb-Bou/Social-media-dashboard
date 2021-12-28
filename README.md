@@ -44,4 +44,4 @@ Thank you for reading so far,
 
 Please if there is any improvement feel free to contribute
 
-Made with 💖 by [Zineb Boutaa](https://zineb-bou.github.io/)
+Made with 💖 by [ZINEB](https://zineb-bou.github.io/)
